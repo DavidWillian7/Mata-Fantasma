@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #001A35;
+}
+
+.inicio{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.imagemInicial{
+    width: 37%;
+    margin: auto;
+}
+
+.dificuldade{
+    width: 200px;
+    margin: 8px auto;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.painel{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+.cronometro{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inimigo1{
+    width: 60px;
+    height: 60px;
+}
+
+.inimigo2{
+    width: 70px;
+    height: 70px;
+}
+
+.inimigo3{
+    width: 90px;
+    height: 90px;
+}
+
+.lado1{
+    transform: scaleX(1);
+}
+
+.lado2{
+    transform: scaleX(-1);
+}
+
+.fimDeJogo{
+    margin: auto;
+    width: 40%;
+}
+
+.reiniciar{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #dadce0;
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.reiniciar:hover{
+    background-color: rgb(53, 52, 52);
+    color: white;
+}

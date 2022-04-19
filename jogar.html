@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="ajustarTela()">
+    <div class="painel">
+        <div class="vidas">
+            <img id="vida1" src="imagens/coracaoCheio.png" alt="vidas">
+            <img id="vida2" src="imagens/coracaoCheio.png" alt="vidas">
+            <img id="vida3" src="imagens/coracaoCheio.png" alt="vidas">
+            <img id="vida4" src="imagens/coracaoCheio.png" alt="vidas">
+        </div>
+        <div class="cronometro">Tempo restante: <span id="segundos">20</span></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        var invocarFantasma = setInterval(function(){
+            gerarInimigo();
+        }, criaFantasma);
+    </script>
+</body>
+</html>
